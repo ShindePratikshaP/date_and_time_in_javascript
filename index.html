@@ -10,17 +10,45 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             padding-top: 50px;
-            font-size: 48px;
+            font-size: 40px;
+            background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+            height: 100vh;
+            color: white;
+            font-weight: bolder;
+        }
+        .label{
+            margin: 20px;
+        }
+        .input{
+            width: 200px;
+            padding: 5px;
+        }
+        .btn{
+            padding: 5px 10px;
+            background-color: rgb(3, 241, 150);
+            color: rgb(5, 16, 99);
+            font-weight: bolder;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 2px;
+            border: none;
+        }
+        .btn:hover{
+            box-shadow: 0px 0px 5px 0px white;
+        }
+        #result{
+            margin: 20px;
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
     <div id="clock"></div>
 
-    <label for="birthdate">Enter Your Birthdate</label>
-    <input type="date" id="birthdate">
+    <label for="birthdate" class="label">Enter Your Birthdate</label><br />
+    <input type="date" id="birthdate" class="input">
 
-    <button onclick="calculateAge()">Calculate Age</button>
+    <button onclick="calculateAge()" class="btn">Calculate Age</button>
 
     <div id="result"></div>
 
